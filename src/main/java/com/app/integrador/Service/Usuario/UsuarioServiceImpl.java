@@ -4,10 +4,12 @@ import com.app.integrador.Entity.Usuario;
 import com.app.integrador.Exception.UsuarioNotFoundException;
 import com.app.integrador.Repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class UsuarioServiceImpl implements UsuarioServiceInt {
 
     private final UsuarioRepository usuarioRepository;
